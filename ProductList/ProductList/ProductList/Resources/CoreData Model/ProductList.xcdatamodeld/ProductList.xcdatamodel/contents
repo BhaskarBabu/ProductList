@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E2617" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PLBook" representedClassName="PLBook" syncable="YES">
+        <attribute name="authors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PLCamera" representedClassName="PLCamera" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PLMusic" representedClassName="PLMusic" syncable="YES">
+        <attribute name="album" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PLBook" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="PLMusic" positionX="-36" positionY="99" width="128" height="105"/>
+        <element name="PLCamera" positionX="-243" positionY="144" width="128" height="120"/>
+    </elements>
+</model>

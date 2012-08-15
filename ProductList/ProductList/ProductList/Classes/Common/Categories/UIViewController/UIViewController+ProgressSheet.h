@@ -1,0 +1,27 @@
+//
+//  UIViewController+ProgressSheet.h
+//  ProductList
+//
+//  Created by Bhaskar N on 25/04/12.
+//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIViewController (ProgressSheet)
+
+/*!
+ @method     startCenterAndNonBlockBusyViewWithTitle:inTitle:needUserInteraction
+ @abstract   Returns the blocker view with acitivity indicator and title for this view.
+ @discussion This method puts up a view in the center of the screen and assigns it a specific tag (10003) for identifying the view for later use.
+ */
+- (void)startCenterAndNonBlockBusyViewWithTitle:(NSString *)inTitle needUserInteraction:(BOOL)isEnabled;
+
+/*!
+ @method     stopCenterAndNonBlockBusyViewWithTitle
+ @abstract   Removes the blocker view put up by startCenterAndNonBlockBusyViewWithTitle.
+ @discussion This method finds the view with a tag (10003) and removes it from the view
+ */
+- (void)stopCenterAndNonBlockBusyViewWithTitle;
+
+@end
